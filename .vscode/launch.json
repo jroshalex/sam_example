@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run",
+            "type": "cppdbg",  // microsoft C++ debugger used
+            "request": "launch",  // start new debug sesh
+            "program": "${fileDirname}/a.out",  // the program that is run/debugged
+            "args": [],  // can have cmd line args passed to prog
+            "stopAtEntry": false,  // prog runs until first breakpoint, otherwise if true, debugger stops at prog start
+            "cwd": "${fileDirname}", // whilst running program in CWD
+            "externalConsole": false,  // don't open new terminal window, just do in VScode itself
+            "MIMode": "gdb",  // use GDB debugger
+            "miDebuggerPath": "/usr/bin/gdb",
+            "preLaunchTask": "build active file"  // first builds before running so code is compiled first
+        },
+
+        {
+            "name": "CMake Debug",             // THIS SHIII FOR CMAKE ONLY -- debug CMake-built executable
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/AnimalKingdomProject/build/AnimalKingdomMain",  
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build active file", // human-readable name for this task.
+            "type": "shell",  // run as bash cmd
+            "command": "g++",  // the command executed (g++ compile)
+            "args": [
+                "-g",  // debug info for keyboard shtct
+                "${file}",  // active file in editor (VSCode automation crap)
+                "-o",  // like with normal bash cmd "-o" for output file
+                "${fileDirname}/a.out" // output file is a.out and in the same folder or w/e
+            ],
+            "group": "build", // build task for keyboard shtct
+            "problemMatcher": ["$gcc"]  // how VSCode interprets compiler errors 'n shiiiiii
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+# Ignore build output directory
+/build/
+
+# Executables (Linux, Mac, Windows)
+*.exe
+*.out
+*.app
+
+# Object files
+*.o
+*.obj
+
+# Static/Shared libs
+*.a
+*.so
+*.dll
+*.lib
+
+# Compiler cache
+*.ppu
+
+# Debugging files
+*.pdb
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# VS Code
+.vscode/
+
+# CLion / JetBrains
+.idea/
+
+# Backup files
+*~
+*.swp
