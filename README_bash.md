@@ -1,15 +1,3 @@
-Below is a clean, well-organized **README.md** containing the most useful and commonly needed **Linux / Bash commands**, including navigation, file operations, permissions, process management, networking, archives, system info, and more.
-
-You can copy/paste this directly as a `README.md`.
-
----
-
-# 📘 README: Essential Bash Commands
-
-A practical reference for everyday Linux terminal usage.
-
----
-
 ## 📂 **Navigation**
 
 ```bash
@@ -221,15 +209,3 @@ export VAR=value             # Set variable
 echo $VAR                    # Read variable
 env                          # List environment variables
 ```
-
----
-
-# ✔ Ready to use
-
-If you want, I can also generate:
-
-* A “cheat sheet” PDF-style version
-* A version specifically for ESP-IDF development
-* A Windows PowerShell equivalent
-
-Just tell me!
