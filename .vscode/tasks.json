@@ -1,7 +1,7 @@
 {
     "version": "2.0.0",
     "tasks": [
-        {
+        {       // ONLY WORKS WHEN YOU ARE ON THE ACTIVE FILE YOU WANT TO RUN/DEBUG >>>
             "label": "build active file", // human-readable name for this task.
             "type": "shell", // run as bash cmd
             "command": "g++", // the command executed (g++ compile)
@@ -17,7 +17,7 @@
             ] // how VSCode interprets compiler errors 'n shiiiiii
         },
         {
-            "label": "build",
+            "label": "CMakeBuild",
             "type": "shell",
             "command": "${workspaceFolder}/AnimalKingdomProject/build.sh",
             "group": {

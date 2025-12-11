@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Run",
+            "name": "Run",  // ONLY WORKS WHEN YOU ARE ON THE ACTIVE FILE YOU WANT TO RUN/DEBUG
             "type": "cppdbg", // microsoft C++ debugger used
             "request": "launch", // start new debug sesh
             "program": "${fileDirname}/a.out", // the program that is run/debugged
@@ -15,25 +15,13 @@
             "preLaunchTask": "build active file" // first builds before running so code is compiled first
         },
         {
-            "name": "CMake Debug", // THIS SHIII FOR CMAKE ONLY -- debug CMake-built executable
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/AnimalKingdomProject/build/AnimalKingdomMain",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "miDebuggerPath": "/usr/bin/gdb"
-        },
-        {
-            "name": "Launch AnimalKingdom (gdb)",
+            "name": "Debug CMake Build",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/AnimalKingdomProject/build/bin/AnimalKingdomMain",
             "args": [],
             "cwd": "${workspaceFolder}/AnimalKingdomProject",
-            "preLaunchTask": "build",
+            "preLaunchTask": "CMakeBuild",
             "stopAtEntry": false,
             "MIMode": "gdb",
             "miDebuggerPath": "/usr/bin/gdb",
